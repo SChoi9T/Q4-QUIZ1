@@ -26,14 +26,6 @@ hr {
     font-family: "Montserrat", serif;
 }
 
-.container a {
-    color: #1cdcac;
-}
-
-.container a:hover {
-    color: #16e9b4;
-}
-
 .container details {
     color: #000000;
     font-family: "Montserrat", serif;
