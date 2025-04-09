@@ -3,12 +3,6 @@
         var weight = document.getElementById("weight").value;
         var height = document.getElementById("height").value;
 
-        // If there are no values put
-        if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
-            window.alert("Please enter valid numbers for height and weight.");
-            return;
-        }
-
         // BMI Formula: weight / height^2
         let bmi = weight / Math.pow(height, 2);
         let bmiround = Math.round(bmi* 10) / 10;
@@ -25,6 +19,10 @@
         } 
         else if (bmiround >= 30) {
             window.alert("Your BMI Index is " + bmiround + ", meaning you are on the obese scale.");
+        }
+        // If there are no values put
+        else {
+            window.alert("Please enter valid numbers for weight and height.");
         }
     }
 
